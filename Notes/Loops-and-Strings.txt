@@ -1,0 +1,19 @@
+We have multiple different loops in JS:
+1. for loops
+2. while loops
+3. do-while loops
+
+In addition we have 2 new one here: These are mainly used to iterate on some special datatypes
+1. for-of loops: on Strings and Arrays 
+2. for-in loops: on Objects
+Usage - for(char of String); for(key in Object)
+In these loops we need not take care of anything related to iterating variables like - creating it, updating it and stopping condition on it. They are all automatically taken care off
+
+
+
+Strings:
+How do we create them? Just like vraibles using var, let and const. But the value assigned is String, so that is when the type is decided.
+How do we access String value? using its name
+How do we access individual characters? 1. using index and 2. using for-of loop
+What is template literal in Strings? Technique to insert variable values in String using `(backticks) and $(dollar)
+methods: toUpperCase(); toLowerCase(); trim(); slice(); concat(); replace(); charAt();   

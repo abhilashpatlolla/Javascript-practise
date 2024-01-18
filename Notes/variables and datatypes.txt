@@ -1,0 +1,18 @@
+What are variables? containers
+What are different kinds of variables? primitive and non-primitive
+
+
+Primitive:
+What different values are possible to store (or) What are the different datatypes possible? NNBBSSU
+How to declare variables? let, var and const. But we do not specify any datatype. Also Bigint and Symbole are declared(Created) differently.
+How to access values of variables? Directly using variable name.
+How to know the type of variables(since we already know variable type depends on the value in it at that moment, and we call this as dynamically typed variables)? using "typeof" operator
+
+
+
+Non-primitive:
+What are the different types of non-primitive variables? Objects with 2 subcategories - Arrays and Functions. This means we can have variable of type Array(There is no separate type called arrray, it is considered as Object) or even as Function(woww). But when you try to print typeof arrayVariable, it will be Object(woww again does this mean No variable type Array? Yes)
+How do we declare each of these Objects, Arrays and Function type variables? Declaring would not changes, still let, var and const but as we know type is decided by value assigned and assigning each of these different types of values is different
+How to declare object? This is basically collection of multiple key-values pairs enclosed by curly braces.
+How to declare array? multiple comma separated values, can be of different types as well, enclosed by square brackets.
+How to access data of an object? 2 ways: objectName["variableName"] or objectName.variableName
