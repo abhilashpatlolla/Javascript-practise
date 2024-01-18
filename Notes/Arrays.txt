@@ -1,0 +1,18 @@
+Just like objects, even arrays are a collection of Items. But the difference is that:
+Arrays - Stores collection of elements in linear manner, here the keys would be array indexes itself. This is why we consider Arrays as Objects itself instead of having another datatype
+Objects - Stores collection of elements in key-value manner
+
+Arrays in JS can store even different types of data.
+
+Array methods:
+1. push(element) - Add new element at the end of array and returns the new length of array
+2. pop() - Removes and returns the element from the end of the array
+3. concat(array) - Joins multiple arrays and returns the result
+4. unshift(element) - To add an element at the beginning of the array and returns the new length of array
+5. shift() - Remove and return element from the beginning of the array
+6. slice(startIndex, endIndex) - It creates a shallow copy of the selected part of the original array and returns it but does not modify it.
+7. splice() - A bit more complicated. Refer to MDN Docs - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+8. forEach(function with single argument) - to do some operation on every element of the array. Operation is specified by the function, which is usually an arrow function.
+9. filter(function with single argument) - to filter out values from the array that satisfies some condition. Condition is defined in function. Creates a new array and returns it.
+10. map( function with single argument) - creates a new array with the result of operation specified in the function
+11. reduce(function with 2 arguments) - Returns a single element performing some operation on the existing elements of the array.
