@@ -1,0 +1,17 @@
+console.log() vs console.dir(): console log of any node prints its HTML structure while dir prints object structure which includes html children nodes as well
+
+Some notable elements of object structure of HTML node:
+attributes, childElementCount, childNodes, children, firstChild, firstElementChild, lastChild, lastElementChild, id, innerHTML, lang, nodeName, nodeValue, 
+parentElement, parentNode, style, tagName, textContent
+
+Window object - It represent an open window in a browser. It is a browser's object and not Javascript object. It is automatically created by the browser
+                It is a global object with lots of roperties and methods. ex. console.log(); console.dir(); alert(); prompt() 
+
+DOM - It is way to access HTML code using Javascript. Using this you can make dynamic change to your website at the Run-time.
+
+All the HTML elements can be accessed from Javascript using "Document" object
+Note: Even though we have HTML in the DOM tree we can directly access head and body using - document.body and document.head (Interesting and remember)
+
+
+
+

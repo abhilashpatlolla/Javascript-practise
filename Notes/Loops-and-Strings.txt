@@ -17,3 +17,9 @@ How do we access String value? using its name
 How do we access individual characters? 1. using index and 2. using for-of loop
 What is template literal in Strings? Technique to insert variable values in String using `(backticks) and $(dollar)
 methods: toUpperCase(); toLowerCase(); trim(); slice(); concat(); replace(); charAt();   
+
+String escape sequence characters:
+\' - For single quotes in a sentence e.g Ileana D'cruz. Considered single character length
+\" - For Double quotes in a sentence e.g take the "banana" or leave it. Considered single character length
+\n - For new line
+\t - For tab
