@@ -9,9 +9,42 @@ Window object - It represent an open window in a browser. It is a browser's obje
 
 DOM - It is way to access HTML code using Javascript. Using this you can make dynamic change to your website at the Run-time.
 
-All the HTML elements can be accessed from Javascript using "Document" object
+All the HTML elements can be accessed from Javascript using "Document" object. We can delete existing elements and also create elements that do not already exist.
 Note: Even though we have HTML in the DOM tree we can directly access head and body using - document.body and document.head (Interesting and remember)
 
+We can access any element of HTML using any of the 2 ways:
+1. document.getElement/s(): document.getElementById("idName"), document.getElementsByClassName("className"), document.getElementsByTagName(tagName)
+2. document.querySelector(): document.querySelector(#id/.name/tag), document.querySelectorAll(#id/.name/tag)
+As per me, I would prefer using querySelector, wanna know why, then test it in browser. Its o/p is easily understandable.
 
 
+Some properties:
+1. tagName - returns tag for element nodes.
+2. innerText - returns only the text content of the element and all of its children
+3. innerHTML - returns the HTML contents of the element in the textual format
+4. textContent - This is similar to innerHTML. Additionally it displays hidden HTML nodes as well.
 
+
+childNodes vs children:
+childNodes has three types of Nodes - Text nodes, HTML element nodes and cpmment node. Return type NodeList
+while children represents HTML elements/Nodes only, so I guess it is better to use "children" than to use "childNodes". Return type HTMLCollection
+
+
+Attributes: To access as well as modify attributes of a node
+1. getAttribute(attr) - To get the value of an attribute
+2. setAttribute(attr, val) - To set the value of an attribute
+
+Style: To access existing styling elements as well as modify styling
+Node.style
+
+Create an element in JS:
+document.createElement();
+
+Insert Elements: 
+1. node.append(element) - Add an element inside the node at the end of it. 
+2. node.prepend(element) - Add an element inside the node at the beginning of it.
+3. node.before(element) - Add an element before a node
+4. node.after(element) - Add an element after a node
+
+Delete Element:
+Node.remoove() - Removes the node
