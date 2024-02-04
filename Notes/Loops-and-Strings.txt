@@ -15,7 +15,7 @@ Strings:
 How do we create them? Just like vraibles using var, let and const. But the value assigned is String, so that is when the type is decided.
 How do we access String value? using its name
 How do we access individual characters? 1. using index and 2. using for-of loop
-What is template literal in Strings? Technique to insert variable values in String using `(backticks) and $(dollar)
+What is template literal in Strings? Technique to insert variable values in String using `(backticks) and $(dollar),{curly-braces}
 methods: toUpperCase(); toLowerCase(); trim(); slice(); concat(); replace(); charAt();   
 
 String escape sequence characters:

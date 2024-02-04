@@ -1,0 +1,4 @@
+Arithmetic operators: 8
+Assignment operators: 6
+Comparison operators: 8
+Logical operators: 3
