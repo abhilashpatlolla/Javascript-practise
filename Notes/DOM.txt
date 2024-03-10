@@ -12,10 +12,14 @@ DOM - It is way to access HTML code using Javascript. Using this you can make dy
 All the HTML elements can be accessed from Javascript using "Document" object. We can delete existing elements and also create elements that do not already exist.
 Note: Even though we have HTML in the DOM tree we can directly access head and body using - document.body and document.head (Interesting and remember)
 
-We can access any element of HTML using any of the 2 ways:
-1. document.getElement/s(): document.getElementById("idName"), document.getElementsByClassName("className"), document.getElementsByTagName(tagName)
-2. document.querySelector(): document.querySelector(#id/.name/tag), document.querySelectorAll(#id/.name/tag)
+We can access any Element of HTML using any of the 2 ways:
+1. document.getElement/s(): document.getElementById("idName"), document.getElementsByClassName("className"), document.getElementsByTagName(tagName) - Returns Element, HTMLCollection and HTMLCollection respectively.
+2. document.querySelector(): document.querySelector("#id/.name/tag"), document.querySelectorAll("#id/.name/tag"). Double quotes are compulsory. Returns Element and NodeList respectively
 As per me, I would prefer using querySelector, wanna know why, then test it in browser. Its o/p is easily understandable.
+Note:
+1. If no match is found, then Null is returned. 
+2. Do read about the return type of each of these methods, they return HTMLCollection, NodeList, Element etc. Which one does what is the question.
+2. Read about javascript Element in MDN docs
 
 
 Some properties:
@@ -23,6 +27,8 @@ Some properties:
 2. innerText - returns only the text content of the element and all of its children
 3. innerHTML - returns the HTML contents of the element in the textual format
 4. textContent - This is similar to innerHTML. Additionally it displays hidden HTML nodes as well.
+Note:
+When an element contains only text and no child elements(like <p></p>), then innerText and innerHTML returns the same text content.
 
 
 childNodes vs children:
@@ -33,6 +39,10 @@ while children represents HTML elements/Nodes only, so I guess it is better to u
 Attributes: To access as well as modify attributes of a node
 1. getAttribute(attr) - To get the value of an attribute
 2. setAttribute(attr, val) - To set the value of an attribute
+
+Note:
+The difference between Node.attribute property and Node.getAttribute() method is that property returns and Object structure and method returns text value of the menioned attribute
+
 
 Style: To access existing styling elements as well as modify styling
 Node.style
@@ -48,3 +58,9 @@ Insert Elements:
 
 Delete Element:
 Node.remoove() - Removes the node
+
+There are two ways in which you can access children in DOM structure:
+1. Node.childNodes -> NodeList: Contains three types of Nodes - 1. Element Nodes(which are HTML child element nodes) 2. Text Nodes 3. Comment Nodes
+2. Node.children -> HTMLCollection: contains only HTML child element nodes.
+So, I guess I will have to use children instead of childNodes.
+

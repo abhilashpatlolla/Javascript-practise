@@ -5,7 +5,7 @@ Objects - Stores collection of elements in key-value manner
 Arrays in JS can store even different types of data.
 
 Array methods:
-1. push(element) - Add new element at the end of array and returns the new length of array
+1. push(elements) - Add new element at the end of array and returns the "new length" of array
 2. pop() - Removes and returns the element from the end of the array
 3. concat(array) - Joins multiple arrays and returns the result
 4. unshift(element) - To add an element at the beginning of the array and returns the new length of array

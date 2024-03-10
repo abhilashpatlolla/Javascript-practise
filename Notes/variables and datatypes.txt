@@ -1,6 +1,12 @@
 What are variables? containers
 What are different kinds of variables? primitive and non-primitive
 
+Note:
+1. Counter intuitive to Java, in javascript variable does not have a datatype of its own. Its datatype is decided by the value that it holds(remember? variable is a container to hold some value). Default value of variables is 'Undefined'
+These values are of 2 main types: primitive values and non-primitive values.
+2. typeof operator is used to find the datatype of variable(which is nothing but type of the value that it is holding at that instant)
+3. The default value assigned to all variables is "Undefined". i.e it will be the value if you do not explicitly assign any value.
+
 
 Primitive:
 What different values are possible to store (or) What are the different datatypes possible? NNBBSSU
@@ -14,5 +20,18 @@ Non-primitive:
 What are the different types of non-primitive variables? Objects with 2 subcategories - Arrays and Functions. This means we can have variable of type Array(There is no separate type called arrray, it is considered as Object) or even as Function(woww). But when you try to print typeof arrayVariable, it will be Object(woww again does this mean No variable type Array? Yes)
 How do we declare each of these Objects, Arrays and Function type variables? Declaring would not changes, still let, var and const but as we know type is decided by value assigned and assigning each of these different types of values is different
 How to declare object? This is basically collection of multiple key-values pairs enclosed by curly braces.
-How to declare array? multiple comma separated values, can be of different types as well, enclosed by square brackets.
+Can you changes an object after creating it?
+    So, changing an object can mean: 1. changing the contents of the object and 2. changing the reference of the object
+    contents can be changed irrespective of the typeof(var, let, const) But reference cannot be change if it is declared as "const"
+How to prevent data tampering of objects then?
+    By using "Object.freeze(objName)" method. You cannot add a new key, cannot delete an existing key or even change value.
+    This is the Highest level of integority JS provides to its objects.
 How to access data of an object? 2 ways: objectName["variableName"] or objectName.variableName
+How to declare array? multiple comma separated values, can be of different types as well, enclosed by square brackets.
+Can you change an array after creating it? Yes similar to object.
+How to make array non-modifyable - Freeze it similar to objects.
+    Minor difference from objects is - Trying to modify a freezed object gives an exception while for array no exception.
+To assign a function to variable does the function has to be in arrow function format? Yes, else function will have its own name right, think.
+    We can even create a function this way: let c  = function(){console.log("Hello There!!")}
+How to call a function? name followed by paranthesis. Ex. p(); square(5) etc
+Calling just the function name without parantheses will give just the code of the function and does not execute the function. Ex: P, square etc
