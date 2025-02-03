@@ -5,7 +5,7 @@ Note:
 1. Counter intuitive to Java, in javascript variable does not have a datatype of its own. Its datatype is decided by the value that it holds(remember? variable is a container to hold some value). Default value of variables is 'Undefined'
 These values are of 2 main types: primitive values and non-primitive values.
 2. typeof operator is used to find the datatype of variable(which is nothing but type of the value that it is holding at that instant)
-3. The default value assigned to all variables is "Undefined". i.e it will be the value if you do not explicitly assign any value.
+3. The default value assigned to all variables is "Undefined". i.e it will be the value if you do not explicitly assign any value. Is this the default value or the default type of the variables in javascript??
 
 
 Primitive:
